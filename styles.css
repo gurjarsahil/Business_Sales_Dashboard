@@ -44,13 +44,26 @@ header p {
     flex-wrap: wrap;
 }
 
-.filters select, .filters input {
+.filters select, .filters input, .filters button {
     padding: 10px 15px;
     border: 2px solid #ddd;
     border-radius: 8px;
     font-size: 14px;
     flex: 1;
     min-width: 150px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.filters select:hover, .filters button:hover {
+    border-color: #667eea;
+}
+
+.reset-btn {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    font-weight: bold;
 }
 
 .kpi-section {
@@ -167,6 +180,54 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+.filter-message {
+    background: #fff3cd;
+    border: 2px solid #ffc107;
+    padding: 15px 20px;
+    margin: 0 30px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: slideDown 0.3s ease;
+}
+
+.filter-message span {
+    color: #856404;
+    font-weight: 500;
+}
+
+.filter-message button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #856404;
+    padding: 0 10px;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @media (max-width: 768px) {

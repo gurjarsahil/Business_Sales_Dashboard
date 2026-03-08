@@ -16,11 +16,29 @@
 
         <!-- Filters -->
         <div class="filters">
-            <select id="regionFilter"><option>All Regions</option></select>
-            <select id="categoryFilter"><option>All Categories</option></select>
-            <select id="segmentFilter"><option>All Segments</option></select>
-            <input type="date" id="startDate" placeholder="Start Date">
-            <input type="date" id="endDate" placeholder="End Date">
+            <select id="regionFilter">
+                <option value="all">All Regions</option>
+                <option value="North">North</option>
+                <option value="South">South</option>
+                <option value="East">East</option>
+                <option value="West">West</option>
+                <option value="Central">Central</option>
+            </select>
+            <select id="categoryFilter">
+                <option value="all">All Categories</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Furniture">Furniture</option>
+                <option value="Office Supplies">Office Supplies</option>
+                <option value="Clothing">Clothing</option>
+                <option value="Food & Beverage">Food & Beverage</option>
+            </select>
+            <select id="segmentFilter">
+                <option value="all">All Segments</option>
+                <option value="Consumer">Consumer</option>
+                <option value="Corporate">Corporate</option>
+                <option value="Home Office">Home Office</option>
+            </select>
+            <button id="resetFilters" class="reset-btn">Reset Filters</button>
         </div>
 
         <!-- KPI Cards -->
