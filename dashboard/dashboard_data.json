@@ -1,0 +1,168 @@
+{
+  "kpis": {
+    "total_revenue": 31226898.73,
+    "total_orders": 10000,
+    "total_customers": 500,
+    "avg_order_value": 3122.69,
+    "monthly_growth": -7.33,
+    "total_profit": 7017384.83
+  },
+  "monthly_trend": {
+    "labels": [
+      "Apr 2023",
+      "Aug 2023",
+      "Dec 2023",
+      "Feb 2023",
+      "Jan 2023",
+      "Jan 2024",
+      "Jul 2023",
+      "Jun 2023",
+      "Mar 2023",
+      "May 2023",
+      "Nov 2023",
+      "Oct 2023",
+      "Sep 2023"
+    ],
+    "values": [
+      2416167.39,
+      2751173.44,
+      2642220.25,
+      2523569.43,
+      2514233.61,
+      110820.36,
+      2586674.37,
+      2606728.78,
+      2750893.2,
+      2690441.67,
+      2611356.08,
+      2606840.02,
+      2415780.13
+    ]
+  },
+  "revenue_by_region": {
+    "labels": [
+      "Central",
+      "South",
+      "North",
+      "West",
+      "East"
+    ],
+    "values": [
+      6455550.3,
+      6326461.18,
+      6226383.65,
+      6115655.64,
+      6102847.96
+    ]
+  },
+  "top_products": {
+    "labels": [
+      "Cabinet",
+      "Bookshelf",
+      "Jacket",
+      "Folder",
+      "Chair",
+      "Desk",
+      "Paper",
+      "Stapler",
+      "Energy Drink",
+      "Coffee"
+    ],
+    "values": [
+      1225893.21,
+      1190511.73,
+      1114178.91,
+      1108277.52,
+      1101446.06,
+      1099471.73,
+      1088331.67,
+      1086141.6,
+      1081618.41,
+      1078915.13
+    ]
+  },
+  "category_distribution": {
+    "labels": [
+      "Clothing",
+      "Electronics",
+      "Food & Beverage",
+      "Furniture",
+      "Office Supplies"
+    ],
+    "values": [
+      6109626.28,
+      6295719.06,
+      5905838.33,
+      6551677.15,
+      6364037.91
+    ]
+  },
+  "top_customers": [
+    {
+      "Customer_ID": "CUST0414",
+      "Customer_Name": "Mackenzie Rios",
+      "Total_Sales": 116358.67
+    },
+    {
+      "Customer_ID": "CUST0101",
+      "Customer_Name": "William Ibarra",
+      "Total_Sales": 115900.23
+    },
+    {
+      "Customer_ID": "CUST0229",
+      "Customer_Name": "Darlene Marshall",
+      "Total_Sales": 115745.81
+    },
+    {
+      "Customer_ID": "CUST0255",
+      "Customer_Name": "Isaiah Lucas",
+      "Total_Sales": 114019.2
+    },
+    {
+      "Customer_ID": "CUST0014",
+      "Customer_Name": "Traci Rose",
+      "Total_Sales": 110882.27
+    },
+    {
+      "Customer_ID": "CUST0421",
+      "Customer_Name": "Sherry Bridges",
+      "Total_Sales": 106177.68
+    },
+    {
+      "Customer_ID": "CUST0142",
+      "Customer_Name": "Samantha Sanders",
+      "Total_Sales": 103748.22
+    },
+    {
+      "Customer_ID": "CUST0108",
+      "Customer_Name": "Rick White",
+      "Total_Sales": 102707.25
+    },
+    {
+      "Customer_ID": "CUST0248",
+      "Customer_Name": "Don Anderson",
+      "Total_Sales": 102617.1
+    },
+    {
+      "Customer_ID": "CUST0356",
+      "Customer_Name": "Shawn Hines",
+      "Total_Sales": 102248.76
+    }
+  ],
+  "profit_by_region": {
+    "labels": [
+      "Central",
+      "North",
+      "South",
+      "West",
+      "East"
+    ],
+    "values": [
+      1452752.08,
+      1423559.65,
+      1407141.93,
+      1368675.19,
+      1365255.98
+    ]
+  }
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Sales & Operations Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="dashboard-container">
+        <header>
+            <h1>📊 Business Sales & Operations Dashboard</h1>
+            <p>Real-time Analytics & Insights | Data Analyst Project by Sahil Kumar</p>
+        </header>
+
+        <!-- Filters -->
+        <div class="filters">
+            <select id="regionFilter"><option>All Regions</option></select>
+            <select id="categoryFilter"><option>All Categories</option></select>
+            <select id="segmentFilter"><option>All Segments</option></select>
+            <input type="date" id="startDate" placeholder="Start Date">
+            <input type="date" id="endDate" placeholder="End Date">
+        </div>
+
+        <!-- KPI Cards -->
+        <div class="kpi-section">
+            <div class="kpi-card">
+                <div class="kpi-icon">💰</div>
+                <div class="kpi-content">
+                    <h3>Total Revenue</h3>
+                    <p class="kpi-value" id="totalRevenue">$0</p>
+                    <span class="kpi-label">Year to Date</span>
+                </div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-icon">📦</div>
+                <div class="kpi-content">
+                    <h3>Total Orders</h3>
+                    <p class="kpi-value" id="totalOrders">0</p>
+                    <span class="kpi-label">All Time</span>
+                </div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-icon">👥</div>
+                <div class="kpi-content">
+                    <h3>Total Customers</h3>
+                    <p class="kpi-value" id="totalCustomers">0</p>
+                    <span class="kpi-label">Unique</span>
+                </div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-icon">💵</div>
+                <div class="kpi-content">
+                    <h3>Avg Order Value</h3>
+                    <p class="kpi-value" id="avgOrderValue">$0</p>
+                    <span class="kpi-label">Per Transaction</span>
+                </div>
+            </div>
+            <div class="kpi-card growth">
+                <div class="kpi-icon">📈</div>
+                <div class="kpi-content">
+                    <h3>Monthly Growth</h3>
+                    <p class="kpi-value" id="monthlyGrowth">0%</p>
+                    <span class="kpi-label">vs Last Month</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Trend Analysis -->
+        <div class="chart-section">
+            <div class="chart-card large">
+                <h3>📈 Monthly Sales Trend</h3>
+                <canvas id="monthlySalesChart"></canvas>
+            </div>
+            <div class="chart-card">
+                <h3>🌍 Revenue by Region</h3>
+                <canvas id="regionChart"></canvas>
+            </div>
+            <div class="chart-card">
+                <h3>🏆 Top 10 Products</h3>
+                <canvas id="productsChart"></canvas>
+            </div>
+        </div>
+
+        <!-- Business Insights -->
+        <div class="insights-section">
+            <div class="chart-card">
+                <h3>📊 Sales by Category</h3>
+                <canvas id="categoryChart"></canvas>
+            </div>
+            <div class="chart-card">
+                <h3>💎 Top Customers</h3>
+                <div class="table-container">
+                    <table id="customersTable">
+                        <thead>
+                            <tr>
+                                <th>Rank</th>
+                                <th>Customer</th>
+                                <th>Revenue</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="chart-card">
+                <h3>💰 Profit by Region</h3>
+                <canvas id="profitChart"></canvas>
+            </div>
+        </div>
+
+        <footer>
+            <p>Created by <strong>Sahil Kumar</strong> | Data Analyst Portfolio Project</p>
+            <p>📧 gurjarsahil272@gmail.com | 🔗 <a href="https://www.linkedin.com/in/sahil-kumar08/" target="_blank">LinkedIn</a></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
